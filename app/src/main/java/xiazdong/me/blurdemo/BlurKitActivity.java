@@ -63,12 +63,10 @@ public class BlurKitActivity extends AppCompatActivity {
                 BitmapFactory.Options opts = new BitmapFactory.Options();
                 opts.inSampleSize = 4;
                 Bitmap image = BitmapFactory.decodeResource(BlurKitActivity.this.getResources(), data, opts);
-                Bitmap result = BlurKit.getInstance().blur(image, 25);
                 if (position % 2 == 0) {
-                    imageView.setImageBitmap(result);
-                } else {
-                    imageView.setImageBitmap(image);
+                    BlurKit.getInstance().blur(image, 25);
                 }
+                imageView.setImageBitmap(image);
             }
         });
     }

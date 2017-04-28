@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 goToActivity(BlurKitActivity.class);
                 break;
             case R.id.btn_blurry:
-                goToActivity(BlurActivity.class);
+                goToActivity(BlurryActivity.class);
                 break;
         }
     }

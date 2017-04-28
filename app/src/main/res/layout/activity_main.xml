@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     >
-    <ListView
-        android:id="@+id/image"
+    <Button
+        android:id="@+id/btn_blur"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单高斯模糊的实现"
+        android:gravity="center"
         />
-
-    <com.wonderkiln.blurkit.BlurLayout
-        android:id="@+id/blurLayout"
+    <Button
+        android:id="@+id/btn_blurkit"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="BlurKit!"
-            android:textColor="@android:color/white" />
-
-    </com.wonderkiln.blurkit.BlurLayout>
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:text="BlurKit-Android"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btn_blurry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blurry"
+        android:gravity="center"
+        />
+</LinearLayout>

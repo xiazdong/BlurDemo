@@ -92,7 +92,7 @@ public class GussianBlur {
     private void setRadius(int radius) {
         this.sigma = radius;
         this.radius = 3 * sigma;
-        this.kernel = new double[radius + 1];
+        this.kernel = new double[this.radius + 1];
         initKernel();
     }
 

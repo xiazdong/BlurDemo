@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".BlurActivity" />
         <activity android:name=".BlurKitActivity" />
-        <activity android:name=".BlurryActivity"></activity>
+        <activity android:name=".BlurryActivity" />
+        <activity android:name=".RenderScriptActivity"></activity>
     </application>
 
 </manifest>

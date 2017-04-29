@@ -12,6 +12,13 @@
         android:gravity="center"
         />
     <Button
+        android:id="@+id/btn_render"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RenderScript高斯模糊的实现"
+        android:gravity="center"
+        />
+    <Button
         android:id="@+id/btn_blurkit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

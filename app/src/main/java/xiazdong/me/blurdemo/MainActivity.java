@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @BindView(R.id.btn_blur) Button mBlurBtn;
     @BindView(R.id.btn_blurkit) Button mBlurKitBtn;
     @BindView(R.id.btn_blurry) Button mBlurryBtn;
+    @BindView(R.id.btn_render) Button mRenderBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBlurBtn.setOnClickListener(this);
         mBlurKitBtn.setOnClickListener(this);
         mBlurryBtn.setOnClickListener(this);
+        mRenderBtn.setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_blur:
                 goToActivity(BlurActivity.class);
+                break;
+            case R.id.btn_render:
+                goToActivity(RenderScriptActivity.class);
                 break;
             case R.id.btn_blurkit:
                 goToActivity(BlurKitActivity.class);
